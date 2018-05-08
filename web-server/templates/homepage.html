@@ -1,0 +1,28 @@
+<!doctype html>
+<title>CSCI E-49 Final Project</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1>GreatBooks.com</h1>
+</nav>
+<section class="content">
+  {% block content %}
+  <div class="grid-container">
+      {% for item in content %}
+        <div class="grid-item">
+          <img src="{{item.image}}" alt="{{item.title}}" class="prod-img">
+          <div class="title">{{item.title}}</div>
+          <div class="sku">{{item.sku}}</div>
+        </div>
+      {% endfor %}
+  </div>
+  {% endblock %}
+  {% block textContent %}
+    {% for text in textContent %}
+      <div class="cms-text">
+        <h2 class="heading">{{text.title}}</h2>
+        <p>{{text.content}}</p>
+      </div>
+    {% endfor %}
+
+  {% endblock %}
+</section>

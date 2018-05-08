@@ -1,0 +1,23 @@
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 25px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.prod-img {
+  max-width: 250px;
+}
+
+.title, .sku{
+  width: 300px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

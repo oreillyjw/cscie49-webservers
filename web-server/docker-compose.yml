@@ -1,0 +1,19 @@
+version: "2"
+services:
+  nginx:
+    container_name: "python-nginx"
+    image: "nginx"
+    volumes:
+      - ./conf:/etc/nginx/conf.d
+    ports:
+      - "443:443"
+    links:
+      - "python"
+  python:
+    build: .
+    ports:
+      - "5000:8000"
+    environment:
+      - AWS_ACCESS_KEY_ID=<KEY_ID>
+      - AWS_SECRET_ACCESS_KEY=<SECRET_KEY>
+      - region=us-east-1

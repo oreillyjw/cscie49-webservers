@@ -1,0 +1,8 @@
+{
+  "cms-text": [
+    { "id": 1,
+      "title": "Lorem ipsum",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non magna id dui auctor sollicitudin vitae sit amet ante. Nullam ac nibh magna. Quisque consectetur erat dui, sit amet venenatis elit dignissim id. Proin ut risus condimentum, aliquam elit nec, eleifend turpis. Phasellus et malesuada augue. Etiam laoreet accumsan laoreet. Aenean eget elit eget lorem tempor tincidunt. Aliquam non euismod mauris, aliquet volutpat magna. Vestibulum blandit ut dolor a fringilla. Aenean vehicula, mi eu tempor hendrerit, arcu augue pretium nisl, nec consequat lacus felis in enim. Suspendisse in vehicula sem. Mauris et nisl vel odio auctor tristique. Maecenas mauris urna, lacinia at lorem ut, lacinia lacinia ligula."
+    }
+  ]
+}
